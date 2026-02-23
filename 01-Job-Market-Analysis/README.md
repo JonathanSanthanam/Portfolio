@@ -160,18 +160,20 @@ Data-driven career advice: career path decision, skills prioritization, and geog
 01-Job-Market-Analysis/
 ├── README.md
 ├── data/
-│   ├── BusinessAnalyst.csv          # Raw BA dataset (~135K rows)
-│   ├── DataAnalyst.csv              # Raw DA dataset (~73.5K rows)
-│   └── jobs_export.csv              # Cleaned & combined export for Power BI
+│   ├── 1 - BusinessAnalyst.csv          # Raw BA dataset (~135K rows)
+│   ├── 2 - DataAnalyst.csv              # Raw DA dataset (~73.5K rows)
+│   ├── 3 - jobs_export.csv              # Cleaned & combined export for Power BI
+│   ├── 4 - BusinessAnalyst_clean.csv    # Cleaned BA data
+│   └── 5 - DataAnalyst_clean.csv        # Cleaned DA data
 ├── excel/
-│   └── Jobs_Exploration.xlsx        # Exploratory analysis with Pivot Tables
+│   ├── Jobs_Exploration.xlsx             # Exploratory analysis with Pivot Tables
+│   └── DataAnalyst_clean.csv
 ├── sql/
-│   ├── import_all_data.sql          # Table creation & CSV import scripts
-│   └── queries.sql                  # All analytical queries
+│   └── queries.sql                       # All analytical queries
 ├── powerbi/
 │   ├── Analyst_Job_Market_Dashboard.pbix
 │   └── Analyst_Job_Market_Dashboard.pdf
-└── screenshots/                     # Full pipeline documentation (13 images)
+└── screenshots/                          # Full pipeline documentation (13 images)
 ```
 
 ---
