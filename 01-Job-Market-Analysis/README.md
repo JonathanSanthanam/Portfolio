@@ -47,9 +47,77 @@ Excel (Exploration) → MySQL (Cleaning & Analytics) → Power BI (Dashboard)
 
 ---
 
-## 🗄️ Data Model (Star Schema)
+## 📂 Process Walkthrough
 
-Built entirely in Power Query with proper dimensional modeling:
+### Phase 1: Excel — Data Exploration
+
+Raw dataset overview and initial data quality assessment:
+
+![BA Raw Overview](screenshots/01_excel_BA_raw_overview.jpeg)
+![DA Raw Overview](screenshots/02_excel_DA_raw_overview.jpeg)
+
+Pivot Tables to identify top locations and patterns:
+
+![Pivot Location](screenshots/03_excel_DA_pivot_location.jpeg)
+
+Data quality insights documented for the cleaning phase:
+
+![Insights](screenshots/04_excel_insights_riepilogo.jpeg)
+
+### Phase 2: MySQL — Data Cleaning & Analytics
+
+CSV import and validation of both datasets:
+
+![SQL Import](screenshots/05_sql_import_verificato.jpeg)
+
+### Phase 3: Power BI — Data Model
+
+Star schema built in Power Query with proper dimensional modeling:
+
+![Star Schema](screenshots/06_powerbi_star_schema_model.jpeg)
+
+---
+
+## 📊 Dashboard Pages
+
+### 🏠 Home — Navigation
+Interactive home page with visual navigation to all dashboard sections.
+
+![Home](screenshots/07_powerbi_home.jpg)
+
+### 1️⃣ Executive Summary
+High-level KPIs for decision makers: 5,901 jobs, 3,049 companies, market split, top industries and hiring companies.
+
+![Executive Summary](screenshots/08_powerbi_executive_summary.jpg)
+
+### 2️⃣ BA vs DA Comparison
+Side-by-side salary comparison by state and skills demand breakdown by role.
+
+![BA vs DA](screenshots/09_powerbi_ba_vs_da_comparison.jpg)
+
+### 3️⃣ Salary Deep Dive
+Salary progression by experience level, state-by-seniority matrix, and key salary statistics.
+
+![Salary](screenshots/10_powerbi_salary_deep_dive.jpg)
+
+### 4️⃣ Skills Analysis
+Most in-demand skills ranking, BA vs DA skills gap, and skills demand by industry matrix with conditional formatting.
+
+![Skills](screenshots/11_powerbi_skills_analysis.jpg)
+
+### 5️⃣ Geographic Analysis
+USA map visualization, state details with BA/DA breakdown, top 10 cities, and regional overview.
+
+![Geographic](screenshots/12_powerbi_geographic_analysis.jpg)
+
+### 6️⃣ Recommendations
+Data-driven career advice: career path decision, skills prioritization, and geographic strategy.
+
+![Recommendations](screenshots/13_powerbi_recommendations.jpg)
+
+---
+
+## 🗄️ Data Model (Star Schema)
 
 ```
                     ┌─────────────────┐
@@ -86,45 +154,6 @@ Built entirely in Power Query with proper dimensional modeling:
 
 ---
 
-## 📊 Dashboard Pages
-
-### 🏠 Home — Navigation
-Interactive home page with visual navigation to all dashboard sections.
-
-![Home](screenshots/home_preview.png)
-
-### 1️⃣ Executive Summary
-High-level KPIs for decision makers: 5,901 jobs, 3,049 companies, market split, top industries and hiring companies.
-
-![Executive Summary](screenshots/executive_summary.png)
-
-### 2️⃣ BA vs DA Comparison
-Side-by-side salary comparison by state and skills demand breakdown by role.
-
-![BA vs DA](screenshots/ba_vs_da_comparison.png)
-
-### 3️⃣ Salary Deep Dive
-Salary progression by experience level, state-by-seniority matrix, and key salary statistics.
-
-![Salary](screenshots/salary_deep_dive.png)
-
-### 4️⃣ Skills Analysis
-Most in-demand skills ranking, BA vs DA skills gap, and skills demand by industry matrix with conditional formatting.
-
-![Skills](screenshots/skills_analysis.png)
-
-### 5️⃣ Geographic Analysis
-USA map visualization, state details with BA/DA breakdown, top 10 cities, and regional overview.
-
-![Geographic](screenshots/geographic_analysis.png)
-
-### 6️⃣ Recommendations
-Data-driven career advice: career path decision, skills prioritization, and geographic strategy.
-
-![Recommendations](screenshots/recommendations.png)
-
----
-
 ## 📁 Project Structure
 
 ```
@@ -142,7 +171,7 @@ Data-driven career advice: career path decision, skills prioritization, and geog
 ├── powerbi/
 │   ├── Analyst_Job_Market_Dashboard.pbix
 │   └── Analyst_Job_Market_Dashboard.pdf
-└── screenshots/
+└── screenshots/                     # Full pipeline documentation (13 images)
 ```
 
 ---
