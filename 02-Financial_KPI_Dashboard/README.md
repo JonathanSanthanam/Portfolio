@@ -43,7 +43,7 @@ Excel (Exploration) → MySQL (Cleaning & Analytics) → Power BI (Dashboard)
 |------|------------|
 | **Excel** | Data exploration, Pivot Tables for validation, P&L consistency checks, pricing strategy analysis |
 | **MySQL 8.0** | Data cleaning, calculated columns (profit_margin_pct, cogs_ratio_pct, price_premium), CTEs, Window Functions, What-If simulation, Views |
-| **Power BI** | Star schema data model in Power Query, 20+ DAX measures, 7-page interactive dashboard with drill-through |
+| **Power BI** | Star schema data model in Power Query, 20+ DAX measures organized in 4 folders, 7-page interactive dashboard with drill-through |
 
 ---
 
@@ -97,6 +97,74 @@ Variance heatmap dept × quarter:
 
 ---
 
+### Phase 2: MySQL — Data Cleaning & Analytics
+
+CSV import and validation of both datasets:
+
+![Import Verification](screenshots/12_import_verification.jpeg)
+
+Financial clean table created with calculated columns:
+
+![Financial Clean](screenshots/13_financial_clean_created.jpeg)
+
+Budget clean table created:
+
+![Budget Clean](screenshots/14_budget_clean_created.jpeg)
+
+Calculated columns added (profit_margin_pct, cogs_ratio_pct, price_premium):
+
+![Calculated Columns](screenshots/15_colonne_calcolate.jpeg)
+
+NULL check — zero missing values confirmed:
+
+![NULL Check](screenshots/16_null_check.jpeg)
+
+KPI summary query:
+
+![KPI Summary](screenshots/17_kpi_summary.jpeg)
+
+P&L by segment with RANK():
+
+![P&L Segment](screenshots/18_pl_per_segmento.jpeg)
+
+P&L by country with RANK():
+
+![P&L Country](screenshots/19_pl_per_paese.jpeg)
+
+Seasonality and YoY analysis:
+
+![YoY](screenshots/20_stagionalita_yoy.jpeg)
+
+Discount impact on profitability:
+
+![Discount Impact](screenshots/21_impatto_sconti.jpeg)
+
+Pricing strategy — optimal discount band per product (CTE + RANK):
+
+![Pricing Strategy](screenshots/22_pricing_strategy.jpeg)
+
+Forecast vs budget accuracy analysis:
+
+![Forecast Accuracy](screenshots/23_forecast_accuracy.jpeg)
+
+What-If simulation — budget cut on surplus departments:
+
+![What-If](screenshots/24_what_if_simulation.jpeg)
+
+---
+
+### Phase 3: Power BI — Data Model & DAX
+
+Star schema built in Power Query:
+
+![Star Schema](powerbi/27_star_schema.jpeg)
+
+DAX measures organized in 4 folders (Sales Base, YoY, Budget, Dynamic):
+
+![DAX Measures](powerbi/28_dax_measures.jpeg)
+
+---
+
 ## 📊 Dashboard Pages
 
 ### 🏠 Home — Navigation
@@ -133,6 +201,11 @@ Price premium vs margin scatter, optimal discount band per product, and full pri
 Executive summary with key numbers, business story, and 3 actionable recommendations.
 
 ![CFO Briefing](powerbi/07_CFO_Briefing.jpeg)
+
+### 🔍 Product Detail — Drill-Through
+Drill-through page showing per-product breakdown: sales, profit, margin, performance by country and segment.
+
+![Product Detail](powerbi/08_Product_Detail.jpeg)
 
 ---
 
@@ -186,7 +259,7 @@ Executive summary with key numbers, business story, and 3 actionable recommendat
 02-Financial_KPI_Dashboard/
 ├── README.md
 ├── data/
-│   ├── raw/                        # Original source files
+│   ├── raw/
 │   │   ├── Financial Sample.xlsx
 │   │   ├── financial_sample.csv
 │   │   ├── Budget-Forecast.xlsx
@@ -197,17 +270,13 @@ Executive summary with key numbers, business story, and 3 actionable recommendat
 │       └── budget_export.csv
 ├── sql/
 │   └── P2_queries.sql
-├── screenshots/                    # Excel data quality checks + pivot tables (11 images)
-├── powerbi/                        # Dashboard screenshots (JPEG) + PDF pages + .pbix
+├── screenshots/                    # Excel (11) + MySQL (13) pipeline screenshots
+├── powerbi/                        # Star schema, DAX, dashboard pages (JPEG + PDF) + .pbix
 │   ├── 01_Home.jpeg
-│   ├── 02_Command_Center.jpeg
-│   ├── 03_Where_We_Win.jpeg
-│   ├── 04_The_Cost_Story.jpeg
-│   ├── 05_Budget_Reality_Check.jpeg
-│   ├── 06_Pricing_Power.jpeg
-│   ├── 07_CFO_Briefing.jpeg
+│   ├── ...
 │   ├── 08_Product_Detail.jpeg
-│   ├── 09_Tooltip_Product.jpeg
+│   ├── 27_star_schema.jpeg
+│   ├── 28_dax_measures.jpeg
 │   └── P2_Financial_KPI_Dashboard.pbix
 └── Project 2 done!.pdf
 ```
