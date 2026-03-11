@@ -155,11 +155,11 @@ What-If simulation — budget cut on surplus departments:
 
 ### Phase 3: Power BI — Data Model & DAX
 
-Star schema built in Power Query:
+Star schema built in Power Query — Fact_Sales connected to Dim_Product, Dim_Segment, Dim_Country, plus standalone Fact_Budget:
 
 ![Star Schema](powerbi/27_star_schema.jpeg)
 
-DAX measures organized in 4 folders (Sales Base, YoY, Budget, Dynamic):
+DAX measures organized in 4 folders: Sales Base, YoY, Budget, Dynamic:
 
 ![DAX Measures](powerbi/28_dax_measures.jpeg)
 
