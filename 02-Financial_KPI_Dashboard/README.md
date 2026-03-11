@@ -157,11 +157,11 @@ What-If simulation — budget cut on surplus departments:
 
 Star schema built in Power Query — Fact_Sales connected to Dim_Product, Dim_Segment, Dim_Country, plus standalone Fact_Budget:
 
-![Star Schema](powerbi/27_star_schema.jpeg)
+![Star Schema](powerbi/10_star_schema.jpeg)
 
 DAX measures organized in 4 folders: Sales Base, YoY, Budget, Dynamic:
 
-![DAX Measures](powerbi/28_dax_measures.jpeg)
+![DAX Measures](powerbi/11_dax_measures.jpeg)
 
 ---
 
@@ -275,8 +275,8 @@ Drill-through page showing per-product breakdown: sales, profit, margin, perform
 │   ├── 01_Home.jpeg
 │   ├── ...
 │   ├── 08_Product_Detail.jpeg
-│   ├── 27_star_schema.jpeg
-│   ├── 28_dax_measures.jpeg
+│   ├── 10_star_schema.jpeg
+│   ├── 11_dax_measures.jpeg
 │   └── P2_Financial_KPI_Dashboard.pbix
 └── Project 2 done!.pdf
 ```
