@@ -102,37 +102,37 @@ Variance heatmap dept × quarter:
 ### 🏠 Home — Navigation
 Interactive home page with visual navigation to all dashboard sections.
 
-![Home](powerbi/01_Home.pdf)
+![Home](powerbi/01_Home.jpeg)
 
 ### 1️⃣ Command Center
 P&L Waterfall (Gross Sales → Discounts → COGS → Profit), monthly trend 2013 vs 2014, and 5 KPI cards.
 
-![Command Center](powerbi/02_Command_Center.pdf)
+![Command Center](powerbi/02_Command_Center.jpeg)
 
 ### 2️⃣ Where We Win
 Revenue vs Margin scatter by segment, profit by country bar chart, and Segment × Country heatmap.
 
-![Where We Win](powerbi/03_Where_We_Win.pdf)
+![Where We Win](powerbi/03_Where_We_Win.jpeg)
 
 ### 3️⃣ The Cost Story
 COGS vs Discounts breakdown by product, discount impact by segment, and margin trend with benchmark line.
 
-![The Cost Story](powerbi/04_The_Cost_Story.pdf)
+![The Cost Story](powerbi/04_The_Cost_Story.jpeg)
 
 ### 4️⃣ Budget Reality Check
 Budget vs Forecast vs Actual by quarter, variance by department, and heatmap Dept × Quarter.
 
-![Budget Reality Check](powerbi/05_Budget_Reality_Check.pdf)
+![Budget Reality Check](powerbi/05_Budget_Reality_Check.jpeg)
 
 ### 5️⃣ Pricing Power
 Price premium vs margin scatter, optimal discount band per product, and full pricing strategy breakdown.
 
-![Pricing Power](powerbi/06_Pricing_Power.pdf)
+![Pricing Power](powerbi/06_Pricing_Power.jpeg)
 
 ### 6️⃣ CFO Briefing
 Executive summary with key numbers, business story, and 3 actionable recommendations.
 
-![CFO Briefing](powerbi/07_CFO_Briefing.pdf)
+![CFO Briefing](powerbi/07_CFO_Briefing.jpeg)
 
 ---
 
@@ -191,18 +191,25 @@ Executive summary with key numbers, business story, and 3 actionable recommendat
 │   │   ├── financial_sample.csv
 │   │   ├── Budget-Forecast.xlsx
 │   │   ├── budget_forecast.csv
-│   │   └── P2_Exploration.xlsx     # Excel workbook with pivot tables
-│   └── cleaned/                    # Exported from MySQL, ready for Power BI
+│   │   └── P2_Exploration.xlsx
+│   └── cleaned/
 │       ├── financial_export.csv
 │       └── budget_export.csv
 ├── sql/
-│   └── P2_queries.sql              # Full MySQL pipeline
-├── screenshots/                    # Excel data quality checks and pivot tables (11 images)
-├── powerbi/                        # Dashboard pages as PDF + .pbix file
-│   ├── 01_Home.pdf
-│   ├── ...
+│   └── P2_queries.sql
+├── screenshots/                    # Excel data quality checks + pivot tables (11 images)
+├── powerbi/                        # Dashboard screenshots (JPEG) + PDF pages + .pbix
+│   ├── 01_Home.jpeg
+│   ├── 02_Command_Center.jpeg
+│   ├── 03_Where_We_Win.jpeg
+│   ├── 04_The_Cost_Story.jpeg
+│   ├── 05_Budget_Reality_Check.jpeg
+│   ├── 06_Pricing_Power.jpeg
+│   ├── 07_CFO_Briefing.jpeg
+│   ├── 08_Product_Detail.jpeg
+│   ├── 09_Tooltip_Product.jpeg
 │   └── P2_Financial_KPI_Dashboard.pbix
-└── Project 2 done!.pdf             # Full dashboard export (all pages)
+└── Project 2 done!.pdf
 ```
 
 ---
