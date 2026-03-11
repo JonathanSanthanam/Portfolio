@@ -13,8 +13,6 @@ Based in Rome, Italy | Open to remote work & relocation
 |---|---------|-------|-------------|
 | 1 | [**Analyst Job Market Dashboard**](./01-Job-Market-Analysis/) | Excel · MySQL · Power BI | Analyzed 209K+ job listings to compare Business Analyst vs Data Analyst career paths — salary trends, skills demand, geographic opportunities, and data-driven career recommendations. |
 | 2 | [**The Profit Machine — Financial KPI Dashboard**](./02-Financial_KPI_Dashboard/) | Excel · MySQL · Power BI | Built a full financial P&L dashboard analyzing $117.9M in revenue across 5 countries, 5 segments and 6 products — profit margin analysis, budget vs actual variance, pricing strategy, and CFO-ready executive summary. |
-| 3 | Excel Mastery Project | Excel | 🔜 Coming Soon |
-| 4 | SQL Mastery Project | MySQL | 🔜 Coming Soon |
 
 ---
 
