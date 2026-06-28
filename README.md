@@ -1,4 +1,4 @@
-![banner](./Banner Portfolio.png)
+![banner](./Banner_Portfolio.png)
 **Jonathan Santhanam** — Data Analyst | Turning raw data into business decisions.
 Based in Rome, Italy | Open to remote work & relocation
 
